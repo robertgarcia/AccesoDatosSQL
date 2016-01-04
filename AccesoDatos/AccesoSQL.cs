@@ -73,8 +73,15 @@ namespace AccesoDatos
         public SqlCommand CrearComando(string vSP)
         {
             SqlCommand sqlcommand = new SqlCommand(vSP, this.conexion); //Pasamos el procedimento y la conexion
-            sqlcommand.CommandType = CommandType.StoredProcedure; //Se define el tipo comando que sera
+            sqlcommand.CommandType = CommandType.StoredProcedure; //Se define el tipo de comando.
             return sqlcommand; //Retornamos el sqlcommand
+        }
+
+        public SqlCommand CrearQuery(string query)
+        {
+            SqlCommand sqlcommand = new SqlCommand(query, this.conexion); //Pasamos el query y la conexion
+            sqlcommand.CommandType = CommandType.Text; //Se define el tipo de comando.
+            return sqlcommand; //Retornamos el sqlcommand.
         }
 
         /// <summary>
@@ -112,7 +119,7 @@ namespace AccesoDatos
             int num = 0;
             try
             {
-                num = comando.ExecuteNonQuery(); //Ejecuta el comando y devuelve el resultado
+                num = comando.ExecuteNonQuery(); //Ejecuta el comando y devuelve el resultado               
             }
             catch (Exception ex)
             {
@@ -138,7 +145,7 @@ namespace AccesoDatos
                 throw new Exception("Error Ejecutando consulta - " + ex.Message, ex);
             }
             finally
-            {
+            {                
                 comando.Dispose();
             }
             return sqlDataReader;
