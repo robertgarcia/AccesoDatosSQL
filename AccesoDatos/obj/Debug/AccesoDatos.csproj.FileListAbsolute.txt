@@ -2,4 +2,4 @@ c:\users\sytcorp10\documents\visual studio 2013\Projects\AccesoDatos\AccesoDatos
 c:\users\sytcorp10\documents\visual studio 2013\Projects\AccesoDatos\AccesoDatos\bin\Debug\AccesoDatos.pdb
 c:\users\sytcorp10\documents\visual studio 2013\Projects\AccesoDatos\AccesoDatos\obj\Debug\AccesoDatos.dll
 c:\users\sytcorp10\documents\visual studio 2013\Projects\AccesoDatos\AccesoDatos\obj\Debug\AccesoDatos.pdb
-C:\Users\sytcorp10\Documents\Visual Studio 2013\Projects\AccesoDatos\AccesoDatos\obj\Debug\AccesoDatos.csprojResolveAssemblyReference.cache
+C:\Users\sytcorp10\Documents\Visual Studio 2013\Projects\AccesoDatos\AccesoDatos\bin\Debug\IBM.Data.DB2.dll

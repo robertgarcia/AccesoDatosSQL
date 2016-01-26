@@ -77,6 +77,12 @@ namespace AccesoDatos
             return sqlcommand; //Retornamos el sqlcommand
         }
 
+
+        /// <summary>
+        /// Crea un comando del tipo Text
+        /// </summary>
+        /// <param name="query">Sentencia SQL.</param>
+        /// <returns>Retorna un comando de tipo text.</returns>
         public SqlCommand CrearQuery(string query)
         {
             SqlCommand sqlcommand = new SqlCommand(query, this.conexion); //Pasamos el query y la conexion
@@ -119,7 +125,7 @@ namespace AccesoDatos
             int num = 0;
             try
             {
-                num = comando.ExecuteNonQuery(); //Ejecuta el comando y devuelve el resultado               
+                num = comando.ExecuteNonQuery(); //Ejecuta el comando y devuelve el resultado
             }
             catch (Exception ex)
             {
